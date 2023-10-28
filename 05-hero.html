@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omifood Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 32px;
+
+        /*ackground-image: linear-gradient(to right, red, blue);*/
+      }
+
+      header {
+        height: 100vh; /*vh: viewport height*/
+        position: relative;
+
+        /*TO make the image darker I create a stack of images */
+        background-image: linear-gradient(
+            rgba(8, 8, 8, 0.6),
+            rgba(8, 8, 8, 0.6)
+          ),
+          url(hero2.jpg);
+        background-size: cover;
+        color: #ffff;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+
+        /*In relation to parent size*/
+        left: 50%;
+        top: 50%;
+
+        /*In relation to element size*/
+        transform: translate(-50%, -50%);
+      }
+
+      .header-container-inner {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f59f00;
+        color: #ffff;
+        text-decoration: none;
+
+        display: inline-block; /*to be able to apply paddind*/
+        padding: 16px 32px; /*(top-bottom)/(left-right)*/
+        border-radius: 5px;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+
+      section {
+        padding: 96px 0;
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="container header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal deilvery to your door, everyday single day</h1>
+          <p>
+            The most convenient 365-days food delivery subscription that will
+            make you eat healthy again. Tailor to your personal taste and
+            nutritional needs
+          </p>
+          <a href="#" class="btn">Beigin to eat well -></a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h2>Random Heading</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+          nesciunt fuga magnam itaque accusamus ex sit, error quaerat, iusto qui
+          necessitatibus nisi eaque deleniti voluptas dicta enim aspernatur
+          minima temporibus.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
